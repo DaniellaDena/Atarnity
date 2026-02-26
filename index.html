@@ -7,11 +7,625 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Atarnity</h1>
-    <p>Modern marketing platform. We’ll add the full dashboard and landing next.</p>
-    <button id="cta-btn">Start free trial</button>
-  </div>
+  <!-- NAV -->
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-mark">A</div>
+        <span>Atarnity</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#resources">Resources</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn btn-outline" data-action="login">Log in</button>
+        <button class="btn btn-primary" data-action="start-trial">Start free trial</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / FRONT PAGE -->
+    <section class="hero" id="top">
+      <div>
+        <div class="eyebrow">Modern marketing platform</div>
+        <h1>
+          Turn every campaign into
+          <span>predictable revenue</span>
+        </h1>
+        <p class="hero-sub">
+          Atarnity unifies ads, email, and analytics in one place so your team
+          can launch faster, optimize smarter, and scale what actually works.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-action="start-trial">
+            Get started in 2 minutes
+          </button>
+          <button class="btn btn-outline" data-action="book-demo">
+            Book a live demo
+          </button>
+        </div>
+        <div class="hero-meta">
+          <span>
+            <span class="hero-meta-dot"></span>
+            Live ROI tracking
+          </span>
+          <span> No credit card required </span>
+          <span> Designed for agencies and brands </span>
+        </div>
+      </div>
+
+      <!-- hero dashboard-style preview -->
+      <div class="hero-panel" aria-hidden="true">
+        <div class="panel-header">
+          <div class="panel-tabs">
+            <div class="pill pill-active">Overview</div>
+            <div class="pill">Campaigns</div>
+            <div class="pill">Funnels</div>
+            <div class="pill">Audience</div>
+          </div>
+          <div class="pill">Last 30 days</div>
+        </div>
+
+        <div class="panel-kpis">
+          <div class="kpi-card">
+            <div class="kpi-label">Total revenue</div>
+            <div class="kpi-value">$182,430</div>
+            <div class="kpi-trend">+28.4% vs last month</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Avg. ROAS</div>
+            <div class="kpi-value">4.7x</div>
+            <div class="kpi-trend">+0.6x vs target</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Leads generated</div>
+            <div class="kpi-value">9,842</div>
+            <div class="kpi-trend">+17.2% this week</div>
+          </div>
+        </div>
+
+        <div class="panel-main">
+          <div class="mini-chart">
+            <div>Revenue by channel</div>
+            <div class="mini-chart-canvas">
+              <div class="mini-chart-line"></div>
+            </div>
+            <div class="mini-chart-legend">
+              <span>Meta Ads • $72k</span>
+              <span>Google • $58k</span>
+              <span>Email • $29k</span>
+            </div>
+          </div>
+          <div class="right-stack">
+            <div class="mini-list">
+              <div>Top campaigns</div>
+              <div class="mini-list-row">
+                <span>Q2 Launch – US</span>
+                <span class="badge green">7.3x ROAS</span>
+              </div>
+              <div class="mini-list-row">
+                <span>Remarketing – EMEA</span>
+                <span class="badge blue">4.1x ROAS</span>
+              </div>
+              <div class="mini-list-row">
+                <span>Always-on prospecting</span>
+                <span class="badge">3.4x ROAS</span>
+              </div>
+            </div>
+            <div class="mini-list">
+              <div>Automation</div>
+              <div class="mini-list-row">
+                <span>Pause low-ROAS ad sets</span>
+                <span class="badge green">Active</span>
+              </div>
+              <div class="mini-list-row">
+                <span>Boost winning creatives</span>
+                <span class="badge">Draft</span>
+              </div>
+              <div class="mini-list-row">
+                <span>Sync leads to CRM</span>
+                <span class="badge blue">Real time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow">Built for growth</div>
+          <h2>Everything you need in one place</h2>
+        </div>
+        <p>
+          Plan, launch, and optimize every campaign without jumping between
+          tools. Atarnity becomes the central command center for your marketing
+          team.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Unified reporting</h3>
+          <p>
+            Connect Meta, Google, TikTok, email, and more to see real-time
+            performance in a single live dashboard.
+          </p>
+          <div class="feature-footer">No more messy spreadsheets.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Smart automation</h3>
+          <p>
+            Set guardrails for ROAS, CPA, or spend and let rules automatically
+            pause, scale, or reallocate budgets.
+          </p>
+          <div class="feature-footer">Stay in control 24/7.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">👥</div>
+          <h3>Audience insights</h3>
+          <p>
+            Discover which segments respond best, break down performance by
+            creative, and export winning audiences to ad platforms.
+          </p>
+          <div class="feature-footer">Find your next best buyer.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✉️</div>
+          <h3>Email journeys</h3>
+          <p>
+            Drag-and-drop visual journeys, prebuilt ecommerce flows, and
+            live-reported funnel conversion.
+          </p>
+          <div class="feature-footer">From welcome to winback.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3>Native integrations</h3>
+          <p>
+            Plug into Shopify, HubSpot, Salesforce, and over 40 more tools to
+            keep your data accurate and in sync.
+          </p>
+          <div class="feature-footer">Minutes, not months, to connect.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Enterprise-ready</h3>
+          <p>
+            Role-based permissions, SSO, and detailed audit logs ensure your
+            data stays safe across teams and regions.
+          </p>
+          <div class="feature-footer">Built for serious teams.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD SECTION -->
+    <section id="dashboard" class="section">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow">Inside Atarnity</div>
+          <h2>Marketing control center dashboard</h2>
+        </div>
+        <p>
+          Give your team a clear, live view of performance with a dashboard
+          designed for fast decisions and deep insights.
+        </p>
+      </div>
+
+      <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="dash-sidebar">
+          <h3>Workspace</h3>
+          <div class="dash-menu">
+            <div class="dash-item active" data-tab="overview">
+              <div class="dot"></div>
+              <div class="dash-label">Overview</div>
+              <div class="dash-tag">Live</div>
+            </div>
+            <div class="dash-item" data-tab="campaigns">
+              <div class="dot"></div>
+              <div class="dash-label">Campaigns</div>
+            </div>
+            <div class="dash-item" data-tab="funnels">
+              <div class="dot"></div>
+              <div class="dash-label">Funnels</div>
+            </div>
+            <div class="dash-item" data-tab="audiences">
+              <div class="dot"></div>
+              <div class="dash-label">Audiences</div>
+            </div>
+            <div class="dash-item" data-tab="email">
+              <div class="dot"></div>
+              <div class="dash-label">Email journeys</div>
+            </div>
+            <div class="dash-item" data-tab="automation">
+              <div class="dot"></div>
+              <div class="dash-label">Automation rules</div>
+            </div>
+            <div class="dash-item" data-tab="attribution">
+              <div class="dot"></div>
+              <div class="dash-label">Attribution</div>
+            </div>
+          </div>
+
+          <div class="dash-footer">
+            <strong>Workspace health</strong>
+            <div class="dash-footer-text">
+              SLAs on track • 99.9% uptime • 12 connected sources
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main dashboard content -->
+        <div class="dash-main">
+          <!-- OVERVIEW PANEL -->
+          <div class="dash-panel dash-panel-active" data-panel="overview">
+            <div class="dash-main-header">
+              <div>
+                <h3>Performance overview</h3>
+                <div class="dash-subtitle">
+                  Brand: Global Store • Period: Last 30 days
+                </div>
+              </div>
+              <div class="dash-main-controls">
+                <div class="chip filled">All channels</div>
+                <div class="chip">Paid social</div>
+                <div class="chip">Search</div>
+                <div class="chip">Email</div>
+                <div class="chip">Custom</div>
+              </div>
+            </div>
+
+            <div class="dash-grid">
+              <div class="dash-card">
+                <div class="dash-card-header">
+                  <span class="dash-card-title">Key metrics</span>
+                  <span>Updated just now</span>
+                </div>
+                <div class="dash-kpi-row">
+                  <div class="dash-kpi">
+                    <div class="dash-kpi-label">Spend</div>
+                    <div class="dash-kpi-value">$38,925</div>
+                  </div>
+                  <div class="dash-kpi">
+                    <div class="dash-kpi-label">Revenue</div>
+                    <div class="dash-kpi-value">$162,380</div>
+                  </div>
+                  <div class="dash-kpi">
+                    <div class="dash-kpi-label">ROAS</div>
+                    <div class="dash-kpi-value">4.17x</div>
+                  </div>
+                  <div class="dash-kpi">
+                    <div class="dash-kpi-label">CAC</div>
+                    <div class="dash-kpi-value">$21.34</div>
+                  </div>
+                </div>
+                <div class="dash-chart"></div>
+              </div>
+
+              <div class="dash-card">
+                <div class="dash-card-header">
+                  <span class="dash-card-title">Top campaigns</span>
+                  <span>Sorted by ROAS</span>
+                </div>
+                <div class="dash-table">
+                  <div class="dash-table-header">
+                    <span>Campaign</span>
+                    <span>Spend</span>
+                    <span>ROAS</span>
+                    <span>Status</span>
+                  </div>
+                  <div class="dash-table-row">
+                    <span>Spring launch – US</span>
+                    <span>$12,840</span>
+                    <span>6.2x</span>
+                    <span>Scaling</span>
+                  </div>
+                  <div class="dash-table-row">
+                    <span>Brand search</span>
+                    <span>$4,120</span>
+                    <span>5.4x</span>
+                    <span>Stable</span>
+                  </div>
+                  <div class="dash-table-row">
+                    <span>Cart recovery</span>
+                    <span>$1,380</span>
+                    <span>4.9x</span>
+                    <span>Always on</span>
+                  </div>
+                  <div class="dash-table-row">
+                    <span>Prospecting – EMEA</span>
+                    <span>$8,930</span>
+                    <span>3.7x</span>
+                    <span>Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dash-tip-row">
+              <span>
+                Tip: Click any workspace tab on the left to preview a different dashboard mode.
+              </span>
+              <span>We’ll connect this to real data later.</span>
+            </div>
+          </div>
+
+          <!-- CAMPAIGNS PANEL -->
+          <div class="dash-panel" data-panel="campaigns">
+            <div class="dash-main-header">
+              <div>
+                <h3>Campaigns</h3>
+                <div class="dash-subtitle">
+                  All channels • Sorted by spend
+                </div>
+              </div>
+              <div class="dash-main-controls">
+                <div class="chip filled">Active</div>
+                <div class="chip">Paused</div>
+                <div class="chip">Drafts</div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dash-card-header">
+                <span class="dash-card-title">Campaign pipeline</span>
+                <span>Snapshot</span>
+              </div>
+              <div class="dash-table">
+                <div class="dash-table-header">
+                  <span>Name</span>
+                  <span>Stage</span>
+                  <span>Owner</span>
+                  <span>Status</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Q3 Product Launch</span>
+                  <span>Planning</span>
+                  <span>Jane</span>
+                  <span>Briefing</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Summer Promo</span>
+                  <span>Live</span>
+                  <span>Eric</span>
+                  <span>Scaling</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Referral Push</span>
+                  <span>Testing</span>
+                  <span>Team</span>
+                  <span>A/B test</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FUNNELS PANEL -->
+          <div class="dash-panel" data-panel="funnels">
+            <div class="dash-main-header">
+              <div>
+                <h3>Funnels</h3>
+                <div class="dash-subtitle">
+                  High-level conversion performance across key journeys.
+                </div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dash-card-header">
+                <span class="dash-card-title">Acquisition funnel</span>
+                <span>Last 30 days</span>
+              </div>
+              <div class="funnel-row">
+                <div class="funnel-step">Impressions<br /><strong>1.2M</strong></div>
+                <div class="funnel-step">Clicks<br /><strong>92k</strong></div>
+                <div class="funnel-step">Leads<br /><strong>9.8k</strong></div>
+                <div class="funnel-step">Customers<br /><strong>1.1k</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AUDIENCES PANEL -->
+          <div class="dash-panel" data-panel="audiences">
+            <div class="dash-main-header">
+              <div>
+                <h3>Audiences</h3>
+                <div class="dash-subtitle">
+                  Top-performing segments across paid and owned channels.
+                </div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dash-card-header">
+                <span class="dash-card-title">Segments</span>
+                <span>Synced to ad platforms</span>
+              </div>
+              <div class="dash-table">
+                <div class="dash-table-header">
+                  <span>Segment</span>
+                  <span>Size</span>
+                  <span>Value</span>
+                  <span>Sync</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>High LTV – US</span>
+                  <span>12,430</span>
+                  <span>7.9x ROAS</span>
+                  <span>Real-time</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Cart Abandoners</span>
+                  <span>5,304</span>
+                  <span>5.2x ROAS</span>
+                  <span>Hourly</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>New Subscribers</span>
+                  <span>18,221</span>
+                  <span>3.8x ROAS</span>
+                  <span>Daily</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMAIL PANEL -->
+          <div class="dash-panel" data-panel="email">
+            <div class="dash-main-header">
+              <div>
+                <h3>Email journeys</h3>
+                <div class="dash-subtitle">
+                  Lifecycle programs and triggered flows.
+                </div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dash-card-header">
+                <span class="dash-card-title">Core flows</span>
+                <span>Health</span>
+              </div>
+              <div class="dash-table">
+                <div class="dash-table-header">
+                  <span>Flow</span>
+                  <span>Open rate</span>
+                  <span>CTR</span>
+                  <span>Status</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Welcome series</span>
+                  <span>54%</span>
+                  <span>13%</span>
+                  <span>Live</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Winback</span>
+                  <span>29%</span>
+                  <span>7%</span>
+                  <span>Optimizing</span>
+                </div>
+                <div class="dash-table-row">
+                  <span>Post-purchase</span>
+                  <span>47%</span>
+                  <span>11%</span>
+                  <span>Live</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AUTOMATION PANEL -->
+          <div class="dash-panel" data-panel="automation">
+            <div class="dash-main-header">
+              <div>
+                <h3>Automation rules</h3>
+                <div class="dash-subtitle">
+                  Guardrails that keep performance on track 24/7.
+                </div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dash-card-header">
+                <span class="dash-card-title">Live rules</span>
+                <span>5 active</span>
+              </div>
+              <ul class="rule-list">
+                <li>Pause ad sets with ROAS &lt; 1.2 for 3 days.</li>
+                <li>Increase budget 20% for ad sets with ROAS &gt; 4.0.</li>
+                <li>Send Slack alert if CAC rises above $35.</li>
+                <li>Move high-LTV buyers to VIP segment.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ATTRIBUTION PANEL -->
+          <div class="dash-panel" data-panel="attribution">
+            <div class="dash-main-header">
+              <div>
+                <h3>Attribution</h3>
+                <div class="dash-subtitle">
+                  See which channels truly drive incremental revenue.
+                </div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dash-card-header">
+                <span class="dash-card-title">Model comparison</span>
+                <span>Last click vs data-driven</span>
+              </div>
+              <p class="dash-copy">
+                Visual comparison of performance under different models will live here.
+                For now, this is a static preview to show the layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / PRICING PLACEHOLDER -->
+    <section id="pricing" class="section">
+      <div class="cta-band">
+        <div class="cta-band-inner">
+          <div>
+            <h2>Ready to launch Atarnity?</h2>
+            <p>
+              Start a 14-day free trial, connect your ad accounts, and see live
+              ROI in under an hour. Migrate later if you love it.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn-dark" data-action="start-trial">
+              Create my workspace
+            </button>
+            <button class="btn-ghost" data-action="talk-sales">
+              Talk to sales
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow">Resources</div>
+          <h2>What you can add next</h2>
+        </div>
+        <p>
+          Turn this concept into a production app by wiring it up to your
+          backend, auth, and real data sources.
+        </p>
+      </div>
+      <ul class="resource-list">
+        <li>
+          Replace static metrics with live data from your database or analytics APIs.
+        </li>
+        <li>
+          Hook up the buttons to sign-up, login, and onboarding flows.
+        </li>
+        <li>
+          Add charts using a library like Chart.js, Recharts, or ApexCharts.
+        </li>
+        <li>
+          Build separate pages for campaigns, audiences, and email journeys.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Atarnity. All rights reserved.
+  </footer>
+
+  <div id="toast"></div>
 
   <script src="app.js"></script>
 </body>
