@@ -62,11 +62,14 @@ header {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  .logo-img {
+}
+
+.logo-img {
   width: 32px;
   height: 32px;
   object-fit: contain;
 }
+
 
 .logo-mark {
   width: 30px;
