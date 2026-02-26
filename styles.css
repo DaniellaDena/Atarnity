@@ -64,13 +64,14 @@ header {
   text-transform: uppercase;
 }
 
+/* image version of logo */
 .logo-img {
   width: 32px;
   height: 32px;
   object-fit: contain;
 }
 
-
+/* gradient-circle logo (fine to keep or remove) */
 .logo-mark {
   width: 30px;
   height: 30px;
